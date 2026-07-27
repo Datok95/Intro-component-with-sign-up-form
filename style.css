@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url("images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+ 
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 300px;
+    padding: 15px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    
+}
+
+.title{
+    margin: 15px 0;
+    font-weight: 800;
+}
+
+.description{
+    margin-bottom: 20px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer{
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 15px;
+    color: white;
+    padding: 10px 15px;
+    max-width: 100%;
+    align-self: center;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+.offer span{
+    font-weight: 700;
+}
+
+form{
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+input{
+    width: 100%;
+    padding: 15px 0;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border: 0.5px solid hsl(249, 10%, 26%) ;
+}
+
+input::placeholder{
+    color:hsl(249, 10%, 26%);
+    font-weight: 600;
+    padding-left: 20px; 
+}
+
+button{
+    background-color: hsl(154, 59%, 51%);
+    margin: 20px 0;
+    border: none;
+    width: 100%;
+    padding: 15px 0;
+    color:white;
+    font-weight: 700;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: transform 0.3s ease;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: translateY(-4px);
+}
+
+.terms{
+    color:hsl(249, 10%, 26%); 
+    font-size: 0.8rem;
+}
+
+.terms span{
+    color:hsl(0, 100%, 74%); 
+}
+
+.terms span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media (min-width : 350px){
+    .card{
+        max-width: 500px;
+    }
+}
+
+@media (min-width : 998px){
+    .card{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       max-width: 900px;
+       padding: 20px 0;
+    }
+
+    .left{
+        width: 90%;
+
+    }
+}
+
+.alert{
+    background-color: red;
+    color: white;
+}
